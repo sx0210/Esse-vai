@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sx Happy Nations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sx Happy Nations</h1>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Produtos</h2>
+            <div class="product-list">
+                <div class="product" id="product1">
+                    <h3>Smart Geladeira X1000</h3>
+                    <p>R$ 2.500,00</p>
+                    <button onclick="addToCart('Smart Geladeira X1000', 2500)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" id="product2">
+                    <h3>Fritadeira Turbo Pro</h3>
+                    <p>R$ 400,00</p>
+                    <button onclick="addToCart('Fritadeira Turbo Pro', 400)">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Mais 8 produtos -->
+                <div class="product" id="product10">
+                    <h3>Forno Elétrico Master</h3>
+                    <p>R$ 1.200,00</p>
+                    <button onclick="addToCart('Forno Elétrico Master', 1200)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: R$ 0,00</p>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </section>
+        <section class="payment">
+            <h2>Pagamento</h2>
+            <div>
+                <p>Chave PIX:</p>
+                <input type="text" id="pix-key" value="00020126580014BR.GOV.BCB.PIX0136e95eaae1-9c41-4513-a81c-c47f372a3a535204000053039865802BR5925Sairon dos Santos Viveiro6009SAO PAULO621405106kmjofXVUQ6304C910" readonly>
+                <button onclick="copyPix()">Copiar PIX</button>
+            </div>
+        </section>
+        <a class="whatsapp-btn" href="https://wa.me/92993352112" target="_blank">Fale Conosco no WhatsApp</a>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
